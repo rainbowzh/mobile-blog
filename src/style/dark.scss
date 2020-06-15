@@ -1,0 +1,22 @@
+@media (prefers-color-scheme: dark) {
+  body,.NewTitle-block,.main-content{
+    background: #000000 !important;
+  }
+  .SmallBlock-content,.BigBlock-content{
+    background: #171717 !important;
+    border:none !important;
+  }
+  .BigBlock-content .title-intro, .SmallBlock-content .title{
+    color: #fff !important;
+    opacity: 0.8 !important;
+  }
+  .BigBlock-content .other,.SmallBlock-content .user .uer-intro{
+    color: #999999 !important;
+  }
+  .NewTitle-block .title-text,.loding-content{
+    color: #FFFFFF !important;
+  }
+  .NewTitle-block .back-icon{
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAXZJREFUeAHt2EFKA0EQheGguPYwipusPYTnE1wEPIK4z12yURQX4vhKukGampfCnem/oelMVU+gv3lZZDYbBgIIIIAAAggggAACCCCAAAKJwLIs55r3mndJe+5Sw3nQGuNTE6QeCWFEcjqOPv4MkAJIFBlOM1p2HXHK9QjOo/oXU8LEocExjx4ccIyAaZEccIyAaZEccIyAaZEccIyAaZEccIyAaZEccIyAaZEccIyAaZGc4zg7IWWDl11SAWctQMK51fxKovOs2r98TXq2dtg/1g+67yO590q1m6Q+X0lJ2Wq+a47jRYXtfCLJiQNC820U0jVI3ashBcg4QAKpCxRWxSd+biTJWYHkdFoPJJAKAoUtJAmkgkBhC0kCqSBQ2EKSQCoIFLaYJL1Gr/AVp7+lIQXIOEDqj18y8d8NpA6SrSBlKkMNpAEkuzRIT9n+KWsJ0l61yykx1g79Cwkcg3RNctZ0qCOAAAIIIIAAAggggAACpyXwDbppb5cISV4QAAAAAElFTkSuQmCC") no-repeat !important;
+  }
+}

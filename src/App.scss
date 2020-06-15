@@ -1,0 +1,42 @@
+@import './component/index.scss' ;
+@import './container/index.scss' ;
+@import './style/reset.scss' ;
+.App {
+  text-align: center;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  background: #fff;
+  .main-content{
+    width: 100%;
+    height: auto;
+    padding-bottom: 88px;
+    p{
+      height: 388px;
+    }
+  }
+  .footer-tab{
+    height: 88px;
+    width: 100%;
+    background: #eee;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    flex-flow: row;
+    a{
+      display: inline-block;
+    }
+    p,a{
+      flex: 1;
+      line-height: 88px;
+    }
+    p:nth-child(1){
+      border-right: 1px solid #fff;
+    }
+  }
+}
+::-webkit-scrollbar{
+  display: none;
+}

@@ -1,0 +1,58 @@
+.Listpage-block{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-top: 80px;
+  .list-search{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    box-shadow: 0 6px 8px #eee;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+  }
+  .input-wrap{
+    width: 80%;
+    height: auto;
+    border: 1PX solid #ccc;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 30px ;
+  }
+  input {
+    width: calc(100% - 40px);
+    height: 60px;
+    border-style: none;
+    outline: none;
+  }
+  .list-item {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    .title{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 32px;
+      color: #333;
+      height: 42px;
+      line-height: 42px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .context{
+      font-size: 26px;
+      color: #444;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      margin-top: 20px;
+      line-height: 42px;
+    }
+  }
+
+}

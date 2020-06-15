@@ -1,0 +1,56 @@
+.loading-style-block{
+  height: 20px;
+  width: 90px;
+  margin: auto;
+  display: flex;
+  // margin-top: 20px;
+  margin-bottom: 20px;
+  i{
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 12px;
+    animation: load 0.6s ease infinite;
+  }
+  i:nth-child(1){
+    background: #FF552E ;
+    animation-delay: 0.15s ;
+  }
+  i:nth-child(2){
+    background: #4686FD;
+    animation-delay: 0.3s
+  }
+  i:nth-child(3){
+    background: rgb(83,271,174);
+    animation-delay: 0.45s;
+  }
+  i:nth-child(4){
+    background: rgb(255,206,90);
+    animation-delay: 0.6s;
+  }
+}
+@keyframes load{
+  0%{
+      opacity: 1;
+      transform: scale(1.3) ;
+  }
+  100%{
+      opacity: 0.5;
+      transform: scale(0.4) ;
+  }
+}
+@keyframes fisrtInDispare{
+  0%{
+    height:70px;
+  }
+  50%{
+    height: 70px;
+  }
+  90%{
+    height: 70px;
+  }
+  100%{
+    height: 0px;
+  }
+}
