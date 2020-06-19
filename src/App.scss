@@ -1,6 +1,7 @@
 @import './component/index.scss' ;
 @import './container/index.scss' ;
 @import './style/reset.scss' ;
+@import './style/common.scss' ;
 .App {
   text-align: center;
   box-sizing: border-box;
@@ -8,6 +9,20 @@
   overflow-x: hidden;
   height: 100%;
   background: #fff;
+  .swiper-container{
+    width: 100%;
+    height: auto;
+    padding-bottom: 90px;
+  }
+  .swiper-wrapper{
+    width: 100%;
+    height: calc(100vh  - 90px);
+  }
+  .swiper-slide{
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+  }
   .main-content{
     width: 100%;
     height: auto;
@@ -25,15 +40,14 @@
     right: 0px;
     display: flex;
     flex-flow: row;
-    a{
-      display: inline-block;
-    }
-    p,a{
+    z-index: 9;
+    p{
       flex: 1;
       line-height: 88px;
     }
-    p:nth-child(1){
-      border-right: 1px solid #fff;
+    .tab-item-actived{
+      background: $main-Back;
+      color: #fff;
     }
   }
 }

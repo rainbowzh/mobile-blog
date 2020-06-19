@@ -1,4 +1,4 @@
-import React from 'react' ;
+import React, { useEffect, useState } from 'react' ;
 
 
 const List = [
@@ -48,12 +48,19 @@ const List = [
     context : "想找工作你怎么这么难呢?找工作时，你遇到过找工作时，你遇到过哪些奇葩事哪些奇葩事?找工作时，你遇到过哪些奇葩事?找工作时，你遇到过哪些奇葩事?"
   }
 ]
-const ListPage = () => {
+const ListPage = (props:any) => {
+  const translHei = document.body.scrollTop ;
+
+  const handleToBlur = () => {
+    document.body.scrollTop = translHei;
+  }
+
+
   return(
     <div className="Listpage-block">
-      <div className="list-search">
-        <div className="input-wrap"><input type="text"/></div>
-      </div>
+       <div className="list-search">
+          <div className="input-wrap"><input className="input-text" type="text" onBlur={handleToBlur}/></div>
+        </div>
       {
         List.map((item:any) => {
           return(

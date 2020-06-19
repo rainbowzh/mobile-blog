@@ -1,9 +1,12 @@
-import React from 'react' ;
+import React, { useEffect } from 'react' ;
 
 
-const UserPage = () => {
+const UserPage = (props:any) => {
+
   return(
-    <div className="Userpage-block"></div>
+    <div className="Userpage-block">
+      userpage
+    </div>
   )
 }
 

@@ -9,7 +9,7 @@
     background: #fff;
     box-shadow: 0 6px 8px #eee;
     position: fixed;
-    bottom: 0px;
+    top: 0px;
     right: 0px;
   }
   .input-wrap{
@@ -25,6 +25,7 @@
     height: 60px;
     border-style: none;
     outline: none;
+    caret-color:forestgreen;
   }
   .list-item {
     width: 100%;
