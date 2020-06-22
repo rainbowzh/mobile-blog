@@ -1,17 +1,40 @@
 import React, { useEffect, useMemo } from 'react' ;
+import  { ListData } from '../../util/api' ;
+import { Link } from 'react-router-dom' ;
 
 
-const List = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] ;
-const ArticlePage = (props:any) => {
+let List:Array<number> = [] ;
+const  ArticlePage = (props:any) => {  
+  useEffect(() => {
+    const getList = async () => {
+      let res = await ListData();
+      List = res.list ;
+      console.log('res-data',res) ;
+    }
+    getList();
+  },[]);
+
+
   return(
     <div className="Articlepage-block">
       {
-        List.map((item:any, index:number) => {
+        props.List.map((item:any, index:number) => {        
           return (
-            <div className="article-item" key={index}>文章</div>
+            <div className="article-item" key={index}>
+              <Link to={`/detail:${index}`}>
+                <div className="item-type">
+                  <span style={{background : `#52b87e`}}>js</span>
+                  <span style={{background : `#6495ed`}}>React</span>
+                </div>
+                <div className="item-title">{item.title}</div>
+                <div className="item-content"  dangerouslySetInnerHTML={{__html : item.context}}></div>
+                <div className="item-extends">{item.publishTime}</div>
+              </Link>
+            </div>
           )
         })
       }
+      <div className="footer-article">到底啦</div>
     </div>
   )
 }

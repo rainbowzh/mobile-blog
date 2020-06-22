@@ -3,30 +3,7 @@
   height: auto;
   overflow: hidden;
   padding-top: 80px;
-  .list-search{
-    width: 100%;
-    height: 100px;
-    background: #fff;
-    box-shadow: 0 6px 8px #eee;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-  }
-  .input-wrap{
-    width: 80%;
-    height: auto;
-    border: 1PX solid #ccc;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 30px ;
-  }
-  input {
-    width: calc(100% - 40px);
-    height: 60px;
-    border-style: none;
-    outline: none;
-    caret-color:forestgreen;
-  }
+  position: relative;
   .list-item {
     width: 100%;
     height: auto;

@@ -49,18 +49,8 @@ const List = [
   }
 ]
 const ListPage = (props:any) => {
-  const translHei = document.body.scrollTop ;
-
-  const handleToBlur = () => {
-    document.body.scrollTop = translHei;
-  }
-
-
   return(
     <div className="Listpage-block">
-       <div className="list-search">
-          <div className="input-wrap"><input className="input-text" type="text" onBlur={handleToBlur}/></div>
-        </div>
       {
         List.map((item:any) => {
           return(

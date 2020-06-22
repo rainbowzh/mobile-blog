@@ -4,7 +4,7 @@
  * @Author: zhouhong07
  * @Date: 2020-04-09 14:15:59
  * @LastEditors: zhouhong07
- * @LastEditTime: 2020-06-12 14:40:58
+ * @LastEditTime: 2020-06-22 10:57:51
  */
 import axios from 'axios' ;
 import fetchJsonp from 'fetch-jsonp' ;
@@ -70,6 +70,27 @@ const getListData = (params:quaryType) => {
 }
 
 
+const ListData = () =>{
+  return axios({
+    method : "get" ,
+    url : `//localhost:3001/api/article/list` ,
+    timeout : 5000 ,
+    withCredentials : true
+  })
+  .then((res) => {
+    if(fcode(res.data , "status")){
+      console.log('res',res.data);
+      return(res.data);
+     }
+    console.log('res',res.data) ;
+  })
+  .catch((err) => {
+    return {} ;
+    console.log('err',err) ;
+  });
+}
+
 export {
-  getListData
+  getListData ,
+  ListData
 }

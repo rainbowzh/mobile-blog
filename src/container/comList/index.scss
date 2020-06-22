@@ -1,0 +1,79 @@
+.ComListPage-block{
+  text-align: center;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  .list-search{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    box-shadow: 0 6px 8px #eee;
+    padding-top: 20px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 9;
+  }
+  .input-wrap{
+    width: 80%;
+    height: auto;
+    border: 1PX solid #ccc;
+    margin: auto;
+    // margin-top: 20px;
+    border-radius: 30px ;
+  }
+  input {
+    width: calc(100% - 40px);
+    height: 60px;
+    border-style: none;
+    outline: none;
+    caret-color:forestgreen;
+  }
+  .swiper-container{
+    width: 100%;
+    // height: calc(100vh - 90px);
+    flex:1 ;
+    // padding-bottom: 90px;
+  }
+  .swiper-wrapper{
+    width: 100%;
+    // height: calc(100vh  - 90px);
+  }
+  .swiper-slide{
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+  }
+  .main-content{
+    width: 100%;
+    height: auto;
+    padding-bottom: 88px;
+    p{
+      height: 388px;
+    }
+  }
+  .footer-tab{
+    // display: none;
+    height: 88px;
+    width: 100%;
+    background: #eee;
+    // position: fixed;
+    // bottom: 0px;
+    // right: 0px;
+    display: flex;
+    flex-flow: row;
+    z-index: 9;
+    p{
+      flex: 1;
+      line-height: 88px;
+    }
+    .tab-item-actived{
+      background: $main-Back;
+      color: #fff;
+    }
+  }
+}
