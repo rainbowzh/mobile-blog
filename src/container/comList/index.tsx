@@ -33,7 +33,7 @@ const ComListPage = () => {
   const translHei = document.body.scrollTop ;
 
   useEffect(() => {
-    var mySwiper = new win.Swiper('.swiper-container', {
+    var mySwiper = new win.Swiper('#comlistSwiper', {
       autoplay: false,//可选选项，自动滑动
       initialSlide: 0 ,
       on : {
@@ -69,7 +69,7 @@ const ComListPage = () => {
             <div className="input-wrap"><input className="input-text" type="text" onBlur={handleToBlur}/></div>
           </div>
       }
-      <div className="swiper-container">
+      <div className="swiper-container" id="comlistSwiper">
         <div className="swiper-wrapper">
            <div className="swiper-slide">
              <ArticlePage List={articleList}></ArticlePage>

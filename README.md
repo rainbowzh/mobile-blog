@@ -4,12 +4,12 @@
  * @Author: zhouhong07
  * @Date: 2020-03-02 09:30:17
  * @LastEditors: zhouhong07
- * @LastEditTime: 2020-03-18 14:34:45
+ * @LastEditTime: 2020-06-29 14:06:31
  -->
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## 页面入口
 
 ```
- https://zptopic.58.com/imtopic/info/list?type=getBannerInfo
+  http://49.235.235.22:3000/web/mylog
 ```
