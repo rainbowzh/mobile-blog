@@ -1,6 +1,6 @@
 import React, { useEffect ,useState } from 'react' ;
 import { ArticlePage, UserPage, ListPage } from '../index'
-import { getListData, ListData } from '../../util/api' ;
+import { ListData } from '../../util/api' ;
 import { win } from '../../util/helper' ;
 import { Link } from 'react-router-dom' ;
 
